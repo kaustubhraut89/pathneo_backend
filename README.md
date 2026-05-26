@@ -88,7 +88,20 @@ You need to do this for:
 
 ### 4. Running the Application
 
-A convenience script is provided to start all microservices simultaneously for local development.
+You can run individual services using `uvicorn`, or start all of them at once using the provided bash script.
+
+**Option A: Running a single service (using Uvicorn)**
+Navigate to the specific service directory and run uvicorn:
+
+```bash
+# Example: Running the user service
+cd services/user_service
+uvicorn app.main:app --reload --port 8000
+```
+*(Repeat for other services on their respective ports: 8001, 8002, etc.)*
+
+**Option B: Running all services at once**
+A convenience script is provided to start all microservices simultaneously for local development. This script automatically runs `uvicorn` in the background for each service.
 
 ```bash
 # Ensure the script is executable
