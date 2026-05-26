@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+pydantic[email]
+pydantic-settings
+python-dotenv
+httpx
+aiosmtplib
+jinja2

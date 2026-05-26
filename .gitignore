@@ -1,0 +1,49 @@
+# ===== Environment / Secrets =====
+.env
+.env.*
+!.env.example
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ===== Virtual Environments =====
+venv/
+.venv/
+env/
+ENV/
+
+# ===== Testing =====
+.pytest_cache/
+htmlcov/
+.coverage
+*.db
+
+# ===== IDE / Editor =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== macOS =====
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ===== Alembic (auto-generated) =====
+# Keep alembic migrations but ignore temp files
+alembic/tmp/
+
+# ===== Logs =====
+*.log
+logs/
+
+# ===== Distribution =====
+dist/
+build/
+*.egg-info/
+*.egg
